@@ -125,3 +125,14 @@ let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/'  }  }
 let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+" Easily switch between buffers
+nnoremap <leader>1 :1b<cr>                                                                                                                                                                
+nnoremap <leader>2 :2b<cr>
+nnoremap <leader>3 :3b<cr>
+nnoremap <leader>4 :4b<cr>
+nnoremap <leader>5 :5b<cr>
+nnoremap <leader>6 :6b<cr>
+nnoremap <leader>7 :7b<cr>
+nnoremap <leader>8 :8b<cr>
+nnoremap <leader>9 :9b<cr>
+nnoremap <leader>0 :10b<cr>
