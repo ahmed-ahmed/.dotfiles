@@ -1,6 +1,0 @@
-#install powerline with power line fonts from the below url
-#http://www.tecmint.com/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-. /usr/local/lib/python3.4/dist-packages/powerline/bindings/bash/powerline.sh
