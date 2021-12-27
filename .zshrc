@@ -12,7 +12,7 @@ plugins=(git docker npm yarn brew macos mvn)
 source $ZSH/oh-my-zsh.sh
 
 # Example aliases
-source ".aliases"
+source $HOME/.aliases
 
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
