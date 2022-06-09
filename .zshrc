@@ -4,10 +4,10 @@ export PATH=$PATH:/$HOME/Downloads/apache-maven-3.8.4/bin
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME"/.oh-my-zsh"
 
-ZSH_THEME="af-magic"
+ZSH_THEME="muse"
 
 
-plugins=(git docker npm yarn brew macos mvn)
+plugins=(git docker npm yarn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -26,3 +26,31 @@ source $HOME/.aliases
 alias e="exit"
 alias work="cd ~/work"
 alias rm="rm -rf"
+#eval "$(mcfly init zsh)"
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# gitBranch() {
+#     ref=$(git symbolic-ref HEAD | cut -d'/' -f3)
+#     echo $ref
+# }
+
+# branch=$(gitBranch)
+# alias gck= "git add . && git commit -m \"${branch}|Ahmed| "
+#export NODE_OPTIONS=--openssl-legacy-provider
+export JAVA_HOME=`/usr/libexec/java_home -v 11`
+
+[ -f ~/.resh/shellrc ] && source ~/.resh/shellrc # this line was added by RESH (Rich Enchanced Shell History)
+eval $(thefuck --alias)
+eval "$(zoxide init zsh)"
+
+# Fig post block. Keep at the bottom of this file.
+#
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

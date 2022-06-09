@@ -8,3 +8,6 @@ alias untar='tar -xvzf '
 alias e="exit"
 alias work="cd ~/work"
 alias rm="rm -rf"
+alias npmif="npm i --prefer-offline"
+alias cat="rich"
+alias ls="lsd"
