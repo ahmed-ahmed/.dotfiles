@@ -1,13 +1,15 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:/$HOME/Downloads/apache-maven-3.8.4/bin
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+#export PATH=$PATH:/$HOME/Downloads/apache-maven-3.8.4/bin
+#export PATH=/opt/homebrew/bin:$PATH
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME"/.oh-my-zsh"
 
-ZSH_THEME="muse"
+ZSH_THEME="af-magic"
 
 
-plugins=(git docker npm yarn)
+plugins=(git npm yarn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -47,10 +49,3 @@ export JAVA_HOME=`/usr/libexec/java_home -v 11`
 [ -f ~/.resh/shellrc ] && source ~/.resh/shellrc # this line was added by RESH (Rich Enchanced Shell History)
 eval $(thefuck --alias)
 eval "$(zoxide init zsh)"
-
-# Fig post block. Keep at the bottom of this file.
-#
-
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
