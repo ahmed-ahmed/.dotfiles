@@ -1,8 +1,5 @@
-rm -f ~/.zshrc ~/.aliases ~/.vimrc
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/.aliases ~/.aliases
-# vim
-ln -s ~/.dotfiles/.vimrc ~/.vimrc
+rm -rf -f ~/.zshrc ~/.aliases ~/.vimrc ~/.oh-my-zsh
+
 # install packages
 brew install python
 # rich https://github.com/Textualize/rich-cli
@@ -12,6 +9,8 @@ brew install exa
 
 # VIM
 rm -rf ~/.vim
+# vim
+ln -s ~/.dotfiles/.vimrc ~/.vimrc
 
 # install vundle - vim plugin manage
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -27,10 +26,13 @@ cd /tmp/powerline
 cd ..
 rm -rf /tmp/powerline
 
-
 # install vim-gitgutter
 mkdir -p ~/.vim/pack/airblade/start
 cd ~/.vim/pack/airblade/start
 git clone https://github.com/airblade/vim-gitgutter.git
 vim -u NONE -c "helptags vim-gitgutter/doc" -c q
 
+# install oh my zsh 
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/.aliases ~/.aliases

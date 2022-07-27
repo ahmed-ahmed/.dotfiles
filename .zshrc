@@ -47,5 +47,5 @@ export NVM_DIR="$HOME/.nvm"
 export JAVA_HOME=`/usr/libexec/java_home -v 11`
 
 [ -f ~/.resh/shellrc ] && source ~/.resh/shellrc # this line was added by RESH (Rich Enchanced Shell History)
-eval $(thefuck --alias)
-eval "$(zoxide init zsh)"
+# eval $(thefuck --alias)
+# eval "$(zoxide init zsh)"
