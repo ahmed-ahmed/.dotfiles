@@ -33,6 +33,11 @@ git clone https://github.com/airblade/vim-gitgutter.git
 vim -u NONE -c "helptags vim-gitgutter/doc" -c q
 
 # install oh my zsh 
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &
+git clone git@github.com:ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+rm -rf -f ~/.zshrc ~/.aliases
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.aliases ~/.aliases
+
+# install tools 
+pip3 install howdoi
