@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/opt/python/libexec/bin:$HOME/bin:/usr/local/bin:$PATH
 #export PATH=$PATH:/$HOME/Downloads/apache-maven-3.8.4/bin
 #export PATH=/opt/homebrew/bin:$PATH
 
@@ -28,12 +28,10 @@ source $HOME/.aliases
 alias e="exit"
 alias work="cd ~/work"
 alias rm="rm -rf"
-#eval "$(mcfly init zsh)"
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 # gitBranch() {
@@ -47,5 +45,5 @@ export NVM_DIR="$HOME/.nvm"
 # export JAVA_HOME=`/usr/libexec/java_home -v 11`
 
 [ -f ~/.resh/shellrc ] && source ~/.resh/shellrc # this line was added by RESH (Rich Enchanced Shell History)
-# eval $(thefuck --alias)
-# eval "$(zoxide init zsh)"
+eval $(thefuck --alias)
+eval "$(zoxide init zsh)"

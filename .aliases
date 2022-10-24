@@ -12,3 +12,5 @@ alias npmif="npm i --prefer-offline"
 alias cat="rich"
 alias ls="lsd"
 alias h="howdoi"
+alias c="code ."
+alias mkdir='f() { mkdir -p $1 && cd $_};f'
